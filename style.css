@@ -21,6 +21,8 @@ h1 {
   border-style: solid;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
   padding-bottom: 10px;
+  -webkit-box-shadow: white 2px 2px 5px;
+          box-shadow: white 2px 2px 5px;
 }
 
 #calculator #output {
@@ -72,16 +74,22 @@ h1 {
 
 #calculator #numberPad .button:hover,
 #calculator #operationPad .button:hover {
-  border-color: yellow;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
   border-style: solid;
   border-width: thick;
+  -webkit-box-shadow: white 2px 2px 5px;
+          box-shadow: white 2px 2px 5px;
 }
 
 #calculator #numberPad .button:active,
 #calculator #operationPad .button:active {
-  border-color: green;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
   border-style: solid;
   border-width: thick;
+  -webkit-box-shadow: grey 2px 2px 5px;
+          box-shadow: grey 2px 2px 5px;
+  -webkit-transform: translateY(4px) translateX(3px);
+          transform: translateY(4px) translateX(3px);
 }
 
 #footer {

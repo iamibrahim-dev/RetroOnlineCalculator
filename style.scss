@@ -20,6 +20,7 @@ h1 {
   border-style: solid;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
   padding-bottom: 10px;
+  box-shadow: white 2px 2px 5px;
 
   #output {
     background-color: black;
@@ -58,16 +59,19 @@ h1 {
 
     .button:hover {
       @extend .button;
-      border-color: yellow;
+      border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
       border-style: solid;
       border-width: thick;
+      box-shadow: white 2px 2px 5px;
     }
 
     .button:active {
       @extend .button;
-      border-color: green;
+      border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
       border-style: solid;
       border-width: thick;
+      box-shadow: grey 2px 2px 5px;
+      transform: translateY(4px) translateX(3px);
     }
   }
 }
