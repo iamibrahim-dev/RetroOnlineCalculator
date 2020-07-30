@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+
+body {
+  background-color: grey;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+#calculator {
+  margin: 0 auto;
+  width: 250px;
+  background-color: teal;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  box-sizing: border-box;
+  border-width: thick;
+  border-style: solid;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  padding-bottom: 10px;
+
+  #output {
+    background-color: black;
+    color: white;
+    width: 230px;
+    height: 100px;
+    font-size: 25px;
+    font-family: "Comfortaa", cursive;
+    text-align: left;
+    box-sizing: border-box;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    margin: 0 auto;
+  }
+
+  #numberPad,
+  #operationPad {
+    grid-template-columns: 70px 70px 70px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 0 auto;
+
+    .button {
+      width: 70px;
+      height: 70px;
+      background-color: gray;
+      color: black;
+      font-size: 50px;
+      font-family: "Comfortaa", cursive;
+      justify-content: center;
+      box-sizing: border-box;
+      border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+      border-style: solid;
+      border-width: thick;
+      user-select: none;
+    }
+
+    .button:hover {
+      @extend .button;
+      border-color: yellow;
+      border-style: solid;
+      border-width: thick;
+    }
+
+    .button:active {
+      @extend .button;
+      border-color: green;
+      border-style: solid;
+      border-width: thick;
+    }
+  }
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+div {
+  display: grid;
+  box-sizing: border-box;
+}

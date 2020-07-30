@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+body {
+  background-color: grey;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+#calculator {
+  margin: 0 auto;
+  width: 250px;
+  background-color: teal;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: thick;
+  border-style: solid;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  padding-bottom: 10px;
+}
+
+#calculator #output {
+  background-color: black;
+  color: white;
+  width: 230px;
+  height: 100px;
+  font-size: 25px;
+  font-family: "Comfortaa", cursive;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  margin: 0 auto;
+}
+
+#calculator #numberPad,
+#calculator #operationPad {
+  -ms-grid-columns: 70px 70px 70px;
+      grid-template-columns: 70px 70px 70px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 0 auto;
+}
+
+#calculator #numberPad .button, #calculator #numberPad .button:hover, #calculator #numberPad .button:active,
+#calculator #operationPad .button,
+#calculator #operationPad .button:hover,
+#calculator #operationPad .button:active {
+  width: 70px;
+  height: 70px;
+  background-color: gray;
+  color: black;
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  border-style: solid;
+  border-width: thick;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#calculator #numberPad .button:hover,
+#calculator #operationPad .button:hover {
+  border-color: yellow;
+  border-style: solid;
+  border-width: thick;
+}
+
+#calculator #numberPad .button:active,
+#calculator #operationPad .button:active {
+  border-color: green;
+  border-style: solid;
+  border-width: thick;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
