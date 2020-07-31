@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+@font-face {
+  font-family: digital7;
+  src: url(/digital-7-font/Digital7Italic-RBM3.woff);
+}
+
 body {
   background-color: grey;
 }
@@ -8,34 +13,45 @@ h1 {
   font-family: "Comfortaa", cursive;
 }
 
+div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #calculator {
   margin: 0 auto;
-  width: 250px;
+  width: 270px;
   background-color: teal;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
   grid-row-gap: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-width: thick;
-  border-style: solid;
-  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-  padding-bottom: 10px;
   -webkit-box-shadow: white 2px 2px 5px;
           box-shadow: white 2px 2px 5px;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  border-width: thick;
+  border-style: solid;
+  padding-bottom: 10px;
 }
 
 #calculator #output {
   background-color: black;
-  color: white;
+  color: yellow;
   width: 230px;
-  height: 100px;
+  height: 108px;
   font-size: 25px;
-  font-family: "Comfortaa", cursive;
+  font-family: "digital7";
+  letter-spacing: 2px;
   text-align: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  border-width: thick;
+  border-style: solid;
+  border-width: medium;
   margin: 0 auto;
 }
 
@@ -64,8 +80,8 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-  border-style: solid;
   border-width: thick;
+  border-style: solid;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -74,18 +90,12 @@ h1 {
 
 #calculator #numberPad .button:hover,
 #calculator #operationPad .button:hover {
-  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-  border-style: solid;
-  border-width: thick;
   -webkit-box-shadow: white 2px 2px 5px;
           box-shadow: white 2px 2px 5px;
 }
 
 #calculator #numberPad .button:active,
 #calculator #operationPad .button:active {
-  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-  border-style: solid;
-  border-width: thick;
   -webkit-box-shadow: grey 2px 2px 5px;
           box-shadow: grey 2px 2px 5px;
   -webkit-transform: translateY(4px) translateX(3px);
@@ -101,11 +111,4 @@ h1 {
   color: white;
   text-align: center;
   font-family: "Comfortaa", cursive;
-}
-
-div {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
