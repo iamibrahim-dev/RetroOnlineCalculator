@@ -122,11 +122,11 @@ div {
   font-size: 2em;
 }
 
-#footer i {
+i {
   text-align: right;
 }
 
-#footer p {
+p {
   color: white;
   font-family: "Comfortaa", cursive;
   font-size: 1em;
