@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const operators = [".", "+", "*", "/", "%", "-", "(", ")", "C", "="];
+  const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
   let prevClick = "";
 
   outputField = document.getElementById("output");
@@ -16,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   //
-  for (let i = 9; i >= 0; i--) {
+  for (let i = 0; i <= 9; i++) {
     button = document.createElement("div");
     button.classList.add("button");
-    button.setAttribute("id", i);
-    button.innerHTML = i;
+    button.setAttribute("id", numbers[i]);
+    button.innerHTML = numbers[i];
     numberPAD.appendChild(button);
     button.addEventListener("click", () => {
-      prevClick = i;
-      outputField.value += i;
+      prevClick = numbers[i];
+      outputField.value += numbers[i];
     });
   }
 

@@ -92,12 +92,28 @@ div {
 }
 
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: red;
-  color: white;
-  text-align: center;
-  font-family: "Comfortaa", cursive;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  display: grid;
+  table {
+    margin: 0 auto;
+  }
+  a {
+    color: black;
+    font-size: 2em;
+  }
+  i {
+    text-align: right;
+  }
+  p {
+    color: white;
+    font: {
+      family: "Comfortaa", cursive;
+      size: 1em;
+    }
+  }
 }

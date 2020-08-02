@@ -70,7 +70,7 @@ div {
 #calculator #operationPad .button:active {
   width: 70px;
   height: 70px;
-  background-color: gray;
+  background-color: #dcd6bc;
   color: black;
   font-size: 50px;
   font-family: "Comfortaa", cursive;
@@ -103,12 +103,31 @@ div {
 }
 
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+}
+
+#footer table {
+  margin: 0 auto;
+}
+
+#footer a {
+  color: black;
+  font-size: 2em;
+}
+
+#footer i {
+  text-align: right;
+}
+
+#footer p {
   color: white;
-  text-align: center;
   font-family: "Comfortaa", cursive;
+  font-size: 1em;
 }
