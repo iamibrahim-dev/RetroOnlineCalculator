@@ -4,16 +4,6 @@
   src: url(digital-7-font/Digital7Italic-RBM3.woff);
 }
 
-html[theme="dark-mode"] img {
-  -webkit-filter: invert(1) hue-rotate(180deg);
-          filter: invert(1) hue-rotate(180deg);
-}
-
-html {
-  -webkit-transition: color 300ms, background-color 300ms;
-  transition: color 300ms, background-color 300ms;
-}
-
 body {
   background-color: grey;
 }
