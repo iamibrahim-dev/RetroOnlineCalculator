@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
   let prevClick = "";
 
-  outputField = document.getElementById("output");
-  numberPAD = document.getElementById("numberPad");
-  operationPAD = document.getElementById("operationPad");
+  const outputField = document.getElementById("output");
+  const numberPAD = document.getElementById("numberPad");
+  const operationPAD = document.getElementById("operationPad");
 
   function isOperator(op) {
     for (let i = 0; i <= 4; i++) {
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-  //
+
   for (let i = 0; i <= 9; i++) {
-    button = document.createElement("div");
+    const button = document.createElement("div");
     button.classList.add("button");
     button.setAttribute("id", numbers[i]);
     button.innerHTML = numbers[i];
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   for (let i = 0; i <= 9; i++) {
-    button = document.createElement("div");
+    const button = document.createElement("div");
     button.classList.add("button");
     button.innerHTML = operators[i];
     operationPAD.appendChild(button);
